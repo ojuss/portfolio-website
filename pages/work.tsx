@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ojus | Porfolio </title>
+        <title>Ojus | Work</title>
         <link rel="icon" href="/angry-bird-blue-icon.ico" />
       </Head>
       <NavBar />
@@ -23,7 +23,7 @@ export default function Home() {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus Kumar.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Work.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">

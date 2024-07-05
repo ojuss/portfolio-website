@@ -18,7 +18,7 @@ const NavBar = () => {
         >
 
           <Logo />
-          <Link href="/">
+          <Link href={`/work`}>
             ./work
           </Link>
           <Link href="/">
