@@ -1,21 +1,28 @@
-import React from "react";
-import Link from "next/link";
 import Head from "next/head";
-import NavBar from "@/components/NavBar";
-import Image from 'next/image'
+import Experience from "@/components/Experience";
+import Project from "@/components/ProjectCard";
+import GitHub from "@/components/GitHub";
+import PageLayout from "../layouts/PageLayout";
+import useColorMode from "../hooks/useColorMode";
+import colorModes from "@/utils/colorModes";
+import octolink from "../projects/octolink.png";
+import flush from "../projects/flush.png";
+import geochattr from "../projects/geochattr.png";
 
-export default function Home() {
+const Projects = () => {
+  const { colorMode } = useColorMode();
+  const darkMode = colorMode === colorModes.dark;
   return (
     <div>
       <Head>
-        <title>Ojus | Work</title>
-        <link rel="icon" href="/angry-bird-blue-icon.ico" />
+        <title>Ojus | Work </title>
+        <link rel="icon" href="/blue.ico" />
       </Head>
-      <NavBar />
-      <div className={"bg-dark-100 px-4 dark:bg-black sm:px-8"}>
-        <div
+      
+      <PageLayout>
+      <div
           className={
-            "mx-auto flex w-full max-w-prose flex-col justify-center py-16"
+            "mx-auto flex w-full max-w-prose flex-col justify-center "
           }
         >
           <section
@@ -23,94 +30,98 @@ export default function Home() {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Work.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Experiences && Projects.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
             
             <p>
-              Hello world! I'm Ojus, a computer science undergrad {" "}
-              <a
-                href="https://ptu.ac.in/"
-                target="_blank"
-                rel="noreferrer"
-                className={
-                  "rounded bg-blue-300 px-0.5 py-0.5 font-medium text-black hover:bg-blue-400 hover:text-black dark:bg-blue-900 dark:text-white dark:hover:bg-blue-400 dark:hover:text-white"
-                }
-              >
-                @Punjab Technical University
-              </a>
-              . I enjoy coding competitively and building useless but fun projects!{" "}
-            </p>
-            <p>
-              Check out{" "}
-              <Link
-                href="/projects"
-                className="rounded px-0.5 py-0.5 font-medium text-blue-400 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-900"
-              >
-                ./projects
-              </Link>{" "}
-              or my GitHub (
-              <a
-                href="https://github.com/ojuss"
-                target="_blank"
-                rel="noreferrer"
-                className={
-                  "rounded px-0.5 py-0.5 font-medium text-green-400 hover:text-green-700 dark:text-green-300 dark:hover:text-green-900"
-                }
-              >
-                @ojuss
-              </a>
-              ) to see some cool projects!
+            In this section, you'll find a showcase of my latest projects and experience I've had. Here is a summary of my work so far. 
             </p>
           </section>
-          {/*
-          <section className={"self-stretch"}>
-
-             
-            <p className="text-center text-3xl font-light text-dark-500">
-              Posts && Blogs
-            </p>
-            
-            <HomepagePostLayout posts={posts} />
-            
-            <Image src="/images/posts/pit.jpeg" alt="Pit" width={300} height={300} />
-          </section> 
-          */}
-          <div className=" pb-8 flex justify-center items-center w-full">
-            <div className="w-64 h-64 overflow-hidden rounded-full">
-              <Image 
-                src="/images/posts/pit.jpeg" 
-                alt="Pit" 
-                width={256}
-                height={256}
-                className="object-cover w-full h-full"
-              />
-            </div>
-          </div>
-          <div className=" space-y-4 text-lg">
-            <p>
-               I enjoy programming the most when it comes to <span className="text-react">React.js</span> && <span className="text-golang">Go</span> development, creating minimalist front-ends and strong back-ends. Always keen on imporving my skills!
-            </p>
-            <p> I am actively looking for internship opportunities as a Web developer || Software engineer.<br /> Curious to know more about me or discuss opportunities? Let's connect on LinkedIn (
+          <Experience />
+        </div>
+        <div className={"mx-auto w-full max-w-prose"}>
+          <h1 className={"pt-12 text-4xl font-semibold"}>Projects</h1>
+          <div className="mt-4 space-y-12">
+            <Project
+              url="https://octolink.vercel.app"
+              github="octolink"
+              className="bg-gradient-to-tr from-cyan-100 to-teal-50 dark:from-cyan-800 dark:to-teal-800"
+            >
+              <Project.Image src={octolink} />
+              <Project.Title>Octolink</Project.Title>
+              <Project.Description>
+                Octolink is a webapp that enables link sharing for GitHub
+                repositories. You can generate a link to invite collaborators to a
+                repository, without needing to know their GitHub username.
+              </Project.Description>
+              <br />
               <a
-                href="https://github.com/ojuss"
+                className="block w-max"
+                href="https://www.producthunt.com/posts/octolink?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-octolink"
                 target="_blank"
                 rel="noreferrer"
-                className={
-                  "rounded px-0.5 py-0.5 font-medium text-blue-400 hover:text-blue-700 dark:text-blue-300 dark:hover:text-blue-900"
-                }
               >
-                @ojuss
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src={`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=325061&theme=${
+                    darkMode ? "dark" : "light"
+                  }`}
+                  alt="Octolink - Link sharing for GitHub repositories | Product Hunt"
+                  style={{ width: "250px", height: "54px" }}
+                  width="250"
+                  height="54"
+                />
               </a>
-              ) !
-            </p>
+            </Project>
+            <Project
+              url="https://geochattr.netlify.app"
+              github={["GeoChattr/website", "GeoChattr/api"]}
+              devpost="geochattr"
+              className={
+                "dark:to-purple-100-900 bg-gradient-to-tr from-blue-100 to-purple-100 dark:from-blue-800 dark:to-purple-800"
+              }
+            >
+              <Project.Image src={geochattr} />
+              <Project.Title>GeoChattr</Project.Title>
+              <Project.Description>
+                <p>
+                  GeoChattr is a webapp that allows you to chat with people in
+                  your city through doodles and drawings. It features an array of
+                  drawing utensils, colors, and brush sizes. When you chat with
+                  others in your area in real time, you're able to see their
+                  drawings and respond with your own.
+                </p>
+                <p>
+                  Built with <GitHub>ShubhamPatilsd</GitHub> and{" "}
+                  <GitHub>eternalmoon1234</GitHub>
+                </p>
+              </Project.Description>
+            </Project>
+            <Project
+              url="https://github.com/maggie-j-liu/flush"
+              github="flush"
+              className="bg-gradient-to-tr from-pink-100 to-yellow-50 dark:from-pink-800 dark:to-yellow-800"
+            >
+              <Project.Image src={flush} />
+              <Project.Title>Flush</Project.Title>
+              <Project.Description>
+                Flush is a chrome extension that will promote productivity and
+                focus! By blocking distraction-causing websites and regularly
+                prompting you with flashcards, Flush ensures that your studying is
+                not compromised. Via an options page, you may mark which websites
+                you would like to block and customize the time between prompts
+                (flashcards). When you get one question (flashcard) correct, you
+                are allowed to visit the site for a time that you set (e.g., 5
+                minutes) before you have to answer another flashcard.
+              </Project.Description>
+            </Project>
+            
           </div>
-          {/* <h1 className={"text-2xl inline-block rounded text-blue-500 dark:text-blue-100 font-semibold"}>Technologies && Frameworks 🛠️</h1> */}
         </div>
-      </div>
+      </PageLayout>
     </div>
   );
-}
-
-
+};
+export default Projects;

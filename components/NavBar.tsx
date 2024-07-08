@@ -6,6 +6,7 @@ import GitHubButton from "./GitHubButton";
 import LinkedInButton from "./LinkedInButton";
 import GmailButton from "./GmailButton";
 import DevCommunityButton from "./DevCommunity";
+import ResumeButton from "./ResumeButton";
 
 const NavBar = () => {
   return (
@@ -33,6 +34,7 @@ const NavBar = () => {
           <LinkedInButton />
           <GitHubButton />
           <GmailButton />
+          <ResumeButton />
           <DevCommunityButton />
         </div>
       </div>

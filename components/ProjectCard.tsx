@@ -100,7 +100,7 @@ const Description = ({ children }: { children: React.ReactNode }) => {
   }
   return <div className="space-y-2">{children}</div>;
 };
-const ProjectImage = ({ src }: { src: StaticImageData }) => {
+const ProjectImage = ({ src }: { src: StaticImageData | string }) => {
   return <Image placeholder="blur" src={src} alt="project image" />;
 };
 const ProjectCard = ({

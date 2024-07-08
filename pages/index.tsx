@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ojus | Porfolio </title>
-        <link rel="icon" href="/angry-bird-blue-icon.ico" />
+        <link rel="icon" href="/blue.ico" />
       </Head>
       <NavBar />
       <div className={"bg-dark-100 px-4 dark:bg-black sm:px-8"}>
@@ -23,7 +23,7 @@ export default function Home() {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus Kumar.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
@@ -64,23 +64,10 @@ export default function Home() {
               ) to see some cool projects!
             </p>
           </section>
-          {/*
-          <section className={"self-stretch"}>
-
-             
-            <p className="text-center text-3xl font-light text-dark-500">
-              Posts && Blogs
-            </p>
-            
-            <HomepagePostLayout posts={posts} />
-            
-            <Image src="/images/posts/pit.jpeg" alt="Pit" width={300} height={300} />
-          </section> 
-          */}
           <div className=" pb-8 flex justify-center items-center w-full">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <Image 
-                src="/images/posts/pit.jpeg" 
+                src="/images/posts/bitcoin2.jpg" 
                 alt="Pit" 
                 width={256}
                 height={256}
@@ -106,7 +93,6 @@ export default function Home() {
               ) !
             </p>
           </div>
-          {/* <h1 className={"text-2xl inline-block rounded text-blue-500 dark:text-blue-100 font-semibold"}>Technologies && Frameworks 🛠️</h1> */}
         </div>
       </div>
     </div>
