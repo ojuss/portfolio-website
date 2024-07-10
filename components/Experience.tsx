@@ -4,7 +4,7 @@ interface ExperienceItem {
   company: string;
   position: string;
   duration: string;
-  achievements: string[];
+  achievements: string;
 }
 
 const experiences: ExperienceItem[] = [
@@ -12,37 +12,20 @@ const experiences: ExperienceItem[] = [
     company: "Meta CraftLab",
     position: "Developer Intern (Full Stack)",
     duration: "June 2024 - Present",
-    achievements: [
-      "Tech Stack : Tailwind CSS, ",
-      "In 2022, promoted to VP of Developer Experience. Created a new free course to teach Next.js, which had 17 million page views that year.",
-      "In 2023, promoted to VP of Product, now also leading Product Management.",
-      "Since joining in 2020, Next.js active developers have grown 1000%, now at ~900k.",
-      "Next.js is now a top 10 software project on GitHub with 122k stars. Used by Walmart, ChatGPT, Starbucks, Okta, Datastax, Notion, and more.",
-    ],
+    achievements:
+      "Collaborated in building a physical Meta CraftLab product </devstar> a developer toolkit helps in increasing developers productivity.",
   },
   {
-    company: "Meta CraftLab",
-    position: "Developer Intern (Full Stack)",
+    company: "National Institute of Electronics and Information Technology - Chennai",
+    position: "IoT and Data Analysis Intern",
     duration: "June 2024 - Present",
-    achievements: [
-      "Tech Stack : Tailwind CSS, ",
-      "In 2022, promoted to VP of Developer Experience. Created a new free course to teach Next.js, which had 17 million page views that year.",
-      "In 2023, promoted to VP of Product, now also leading Product Management.",
-      "Since joining in 2020, Next.js active developers have grown 1000%, now at ~900k.",
-      "Next.js is now a top 10 software project on GitHub with 122k stars. Used by Walmart, ChatGPT, Starbucks, Okta, Datastax, Notion, and more.",
-    ],
+    achievements: "Implementing hour-glass architecture. Analyzing data from different components and sensors. Delivering application services to end user."
   },
   {
-    company: "Meta CraftLab",
-    position: "Developer Intern (Full Stack)",
-    duration: "June 2024 - Present",
-    achievements: [
-      "Tech Stack : Tailwind CSS, ",
-      "In 2022, promoted to VP of Developer Experience. Created a new free course to teach Next.js, which had 17 million page views that year.",
-      "In 2023, promoted to VP of Product, now also leading Product Management.",
-      "Since joining in 2020, Next.js active developers have grown 1000%, now at ~900k.",
-      "Next.js is now a top 10 software project on GitHub with 122k stars. Used by Walmart, ChatGPT, Starbucks, Okta, Datastax, Notion, and more.",
-    ],
+    company: "Google Developers Student Club - IKGPTU",
+    position: "Core Team Member",
+    duration: "August 2023 - Present",
+    achievements: "During my time in the GDSC, I had a chance to collaborate on front-end projects with my team mates also help in organizing and participating in workshops and events. I significantly enhanced my technical and interpersonal skills and reinforced my passion for community building."
   },
   // Add more experiences 
 ];
@@ -50,17 +33,13 @@ const experiences: ExperienceItem[] = [
 const Experience: React.FC = () => {
   return (
     <div >
-      <h1 className={"mb-6 text-4xl font-semibold"}>Experiences</h1>
+      <h1 className={"mb-6 text-4xl font-semibold"}> ./experience</h1>
       {experiences.map((exp, index) => (
         <div key={index} className="mb-8">
           <h3 className="text-2xl font-semibold text-blue-400">{exp.company}</h3>
           <p className="text-xl text-gray-300">{exp.position}</p>
           <p className="text-sm text-gray-400 mb-2">{exp.duration}</p>
-          <ul className="list-disc pl-5">
-            {exp.achievements.map((achievement, achIndex) => (
-              <li key={achIndex} className="mb-2">{achievement}</li>
-            ))}
-          </ul>
+          <p className= "">{exp.achievements}</p>
         </div>
       ))}
     </div>

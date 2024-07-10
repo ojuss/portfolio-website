@@ -84,9 +84,4 @@
   scroll-margin-top: 5rem;
 }
 
-@font-face {
-  font-family: 'DaddyBee';
-  src: url('/fonts/daddybee.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
+

@@ -13,13 +13,13 @@ const Projects = () => {
   const { colorMode } = useColorMode();
   const darkMode = colorMode === colorModes.dark;
   return (
-    <div>
+    <div className="">
       <Head>
         <title>Ojus | Work </title>
         <link rel="icon" href="/blue.ico" />
       </Head>
       
-      <PageLayout>
+      <PageLayout >
       <div
           className={
             "mx-auto flex w-full max-w-prose flex-col justify-center "
@@ -42,8 +42,8 @@ const Projects = () => {
           <Experience />
         </div>
         <div className={"mx-auto w-full max-w-prose"}>
-          <h1 className={"pt-12 text-4xl font-semibold"}>Projects</h1>
-          <div className="mt-4 space-y-12">
+          <h1 className={"pb-8 mt-4 text-4xl font-semibold"}>./projects</h1>
+          <div className="space-y-12">
             <Project
               url="https://octolink.vercel.app"
               github="octolink"

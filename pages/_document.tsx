@@ -60,8 +60,8 @@ export default class MyDocument extends Document {
           <link
             rel="alternate"
             type="application/rss+xml"
-            title="RSS Feed for maggieliu.dev"
-            href="https://maggieliu.dev/rss.xml"
+            title=""
+            href=""
           />
         </Head>
         <body
