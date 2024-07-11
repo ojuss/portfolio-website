@@ -100,7 +100,7 @@ const Projects = () => {
               </Project.Description>
             </Project>
             <Project
-              url="https://github.com/maggie-j-liu/flush"
+              url="https://github.com/ojuss/flush"
               github="flush"
               className="bg-gradient-to-tr from-pink-100 to-yellow-50 dark:from-pink-800 dark:to-yellow-800"
             >
