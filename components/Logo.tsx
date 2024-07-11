@@ -27,7 +27,7 @@ const Logo = () => {
       href="/"
     >
       <Image  
-        src="/blue.ico" 
+        src="/connect.ico" 
         alt="Pit" 
         width={76}
         height={76}

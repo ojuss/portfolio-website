@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ojus | Porfolio </title>
-        <link rel="icon" href="/blue.ico" />
+        <link rel="icon" href="/bird.ico" />
       </Head>
       <NavBar />
       <div className={"bg-dark-100 px-4 dark:bg-black sm:px-8"}>
@@ -45,10 +45,10 @@ export default function Home() {
             <p>
               Check out{" "}
               <Link
-                href="/projects"
+                href="/work"
                 className="rounded px-0.5 py-0.5 font-medium text-blue-400 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-900"
               >
-                ./projects
+                ./work
               </Link>{" "}
               or my GitHub (
               <a
@@ -67,7 +67,7 @@ export default function Home() {
           <div className=" pb-8 flex justify-center items-center w-full">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <Image 
-                src="/images/posts/bitcoin2.jpg" 
+                src="/images/posts/pit.jpeg" 
                 alt="Pit" 
                 width={256}
                 height={256}

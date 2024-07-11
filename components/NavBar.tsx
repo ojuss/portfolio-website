@@ -22,11 +22,11 @@ const NavBar = () => {
           <Link href={`/work`}>
             ./work
           </Link>
-          <Link href={`/new`}>
-            ./posts
-          </Link>
-          <Link href="/">
+          <Link href="/misc">
             ./misc
+          </Link>
+          <Link href={`/posts`}>
+            ./posts
           </Link>
         </div>
         <div className={`navbar flex items-center space-x-2 sm:space-x-6`}>
