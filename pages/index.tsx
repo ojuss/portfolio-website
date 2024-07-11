@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ojus | Porfolio </title>
-        <link rel="icon" href="/bird.ico" />
+        <link rel="icon" href="/blue.ico" />
       </Head>
       <NavBar />
       <div className={"bg-dark-100 px-4 dark:bg-black sm:px-8"}>
