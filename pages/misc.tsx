@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PageLayout from "../layouts/PageLayout";
+import NavBar from "@/components/NavBar";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
 import Image from "next/image";
@@ -13,16 +13,15 @@ const Misc = () => {
         <title>Ojus | Work </title>
         <link rel="icon" href="/blue.ico" />
       </Head>
-      
-      <PageLayout >
+      <NavBar />
       <div
           className={
-            "mx-auto flex w-full max-w-prose flex-col justify-center "
+            "mx-auto flex w-full max-w-prose flex-col justify-center"
           }
         >
           <section
             className={
-              "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
+              "mt-32 w-full self-start text-dark-900 dark:text-gray-50 "
             }
           >
             <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Miscellaneous.</h1>
@@ -67,7 +66,7 @@ const Misc = () => {
             />
           </div>
         </div>
-      </PageLayout>
+      
     </div>
   );
 };
