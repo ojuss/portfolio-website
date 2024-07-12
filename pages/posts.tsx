@@ -1,5 +1,5 @@
 import Head from "next/head";
-import PageLayout from "../layouts/PageLayout";
+import PageLayout from "@/components/PageLayout";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
 import Image from "next/image";

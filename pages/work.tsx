@@ -2,7 +2,7 @@ import Head from "next/head";
 import Experience from "@/components/Experience";
 import Project from "@/components/ProjectCard";
 import GitHub from "@/components/GitHub";
-import PageLayout from "../layouts/PageLayout";
+import PageLayout from "@/components/PageLayout";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
 import octolink from "../projects/octolink.png";
