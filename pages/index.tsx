@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ojus | Porfolio </title>
+        <title>Ojus | Portfolio </title>
         <link rel="icon" href="/blue.ico" />
       </Head>
       <NavBar />
@@ -81,7 +81,7 @@ export default function Home() {
             </p>
             <p> I am actively looking for internship opportunities as a Web developer || Software engineer.<br /> Curious to know more about me or discuss opportunities? Let's connect on LinkedIn (
               <a
-                href="https://github.com/ojuss"
+                href="https://linkedin.com/in/ojuss"
                 target="_blank"
                 rel="noreferrer"
                 className={

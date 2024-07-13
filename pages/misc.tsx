@@ -47,20 +47,20 @@ const Misc = () => {
             </p>
           </div>
         </div>
-        <div className=" pb-8 flex justify-center gap-14 items-center w-full">
+        <div className="pb-8 flex flex-col sm:flex-row justify-center items-center w-full gap-8 sm:gap-14">
           <div className="w-64 h-64 overflow-hidden rounded-full">
-            <Image 
-              src="/meguitar.png" 
-              alt="Pit" 
+            <Image
+              src="/meguitar.png"
+              alt="me"
               width={256}
               height={256}
               className="object-cover w-full h-full"
             />
           </div>
           <div className="w-64 h-64 overflow-hidden rounded-full">
-            <Image 
-              src="/guitar.jpg" 
-              alt="Pit" 
+            <Image
+              src="/guitar.jpg"
+              alt="me"
               width={256}
               height={256}
               className="object-cover w-full h-full"

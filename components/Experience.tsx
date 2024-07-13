@@ -1,6 +1,7 @@
 import { link } from 'fs';
 import React from 'react';
 import { FiLink } from 'react-icons/fi';
+import { FcBrokenLink } from "react-icons/fc";
 
 interface ExperienceItem {
   company: string;
@@ -20,7 +21,7 @@ const experiences: ExperienceItem[] = [
     link: "https://craftlab.ai/"
   },
   {
-    company: "NIELIT - Chennai",
+    company: "National Institute of Electronics and Information Technology - Chennai",
     position: "IoT and Data Analysis Intern",
     duration: "June 2024 - Present",
     achievements: "Implementing hour-glass architecture. Analyzing data from different components and sensors. Delivering application services to end user.",
@@ -45,7 +46,7 @@ const Experience: React.FC = () => {
           <div className='flex items-center gap-2'>
             <h3 className="text-2xl font-semibold text-blue-400">{exp.company}</h3>
             <a href= {exp.link} target="_blank" rel="noopener noreferrer" className="text-dark-500 hover:text-white">
-              <FiLink className="w-5 h-5" />
+              <FcBrokenLink className="w-6 h-6" size={30}/>
             </a>
           </div>
           
