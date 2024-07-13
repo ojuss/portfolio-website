@@ -67,7 +67,7 @@ export default function Home() {
           <div className=" pb-8 flex justify-center items-center w-full">
             <div className="w-64 h-64 overflow-hidden rounded-full">
               <Image 
-                src="/images/posts/pit.jpeg" 
+                src="/pit.jpeg" 
                 alt="Pit" 
                 width={256}
                 height={256}

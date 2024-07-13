@@ -5,9 +5,7 @@ import GitHub from "@/components/GitHub";
 import PageLayout from "@/components/PageLayout";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
-import octolink from "../projects/octolink.png";
-import flush from "../projects/flush.png";
-import geochattr from "../projects/geochattr.png";
+
 
 const Projects = () => {
   const { colorMode } = useColorMode();
@@ -45,26 +43,23 @@ const Projects = () => {
           <h1 className={"pb-8 mt-4 text-4xl font-semibold"}>./projects</h1>
           <div className="space-y-12">
             <Project
-              url="https://octolink.vercel.app"
-              github="octolink"
+              url=""
+              github=""
               className="bg-gradient-to-tr from-cyan-100 to-teal-50 dark:from-cyan-800 dark:to-teal-800"
             >
-              <Project.Image src={octolink} />
-              <Project.Title>Octolink</Project.Title>
+              <Project.Image src="" />
+              <Project.Title>FIRST PROJECT</Project.Title>
               <Project.Description>
-                Octolink is a webapp that enables link sharing for GitHub
-                repositories. You can generate a link to invite collaborators to a
-                repository, without needing to know their GitHub username.
+                1st project
               </Project.Description>
-              <br />
               <a
                 className="block w-max"
-                href="https://www.producthunt.com/posts/octolink?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-octolink"
+                href=""
                 target="_blank"
                 rel="noreferrer"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
+                
+                {/* <img
                   src={`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=325061&theme=${
                     darkMode ? "dark" : "light"
                   }`}
@@ -72,49 +67,32 @@ const Projects = () => {
                   style={{ width: "250px", height: "54px" }}
                   width="250"
                   height="54"
-                />
+                /> */}
               </a>
             </Project>
             <Project
-              url="https://geochattr.netlify.app"
-              github={["GeoChattr/website", "GeoChattr/api"]}
-              devpost="geochattr"
+              url=""
+              github=""
+              devpost=""
               className={
                 "dark:to-purple-100-900 bg-gradient-to-tr from-blue-100 to-purple-100 dark:from-blue-800 dark:to-purple-800"
               }
             >
-              <Project.Image src={geochattr} />
-              <Project.Title>GeoChattr</Project.Title>
+              <Project.Image src="" />
+              <Project.Title>SECOND PROJECT</Project.Title>
               <Project.Description>
-                <p>
-                  GeoChattr is a webapp that allows you to chat with people in
-                  your city through doodles and drawings. It features an array of
-                  drawing utensils, colors, and brush sizes. When you chat with
-                  others in your area in real time, you're able to see their
-                  drawings and respond with your own.
-                </p>
-                <p>
-                  Built with <GitHub>ShubhamPatilsd</GitHub> and{" "}
-                  <GitHub>eternalmoon1234</GitHub>
-                </p>
+                2nd project 
               </Project.Description>
             </Project>
             <Project
-              url="https://github.com/ojuss/flush"
-              github="flush"
+              url=""
+              github=""
               className="bg-gradient-to-tr from-pink-100 to-yellow-50 dark:from-pink-800 dark:to-yellow-800"
             >
-              <Project.Image src={flush} />
-              <Project.Title>Flush</Project.Title>
+              <Project.Image src="" />
+              <Project.Title>THIRD PROJECT</Project.Title>
               <Project.Description>
-                Flush is a chrome extension that will promote productivity and
-                focus! By blocking distraction-causing websites and regularly
-                prompting you with flashcards, Flush ensures that your studying is
-                not compromised. Via an options page, you may mark which websites
-                you would like to block and customize the time between prompts
-                (flashcards). When you get one question (flashcard) correct, you
-                are allowed to visit the site for a time that you set (e.g., 5
-                minutes) before you have to answer another flashcard.
+                3rd project
               </Project.Description>
             </Project>
             
