@@ -9,7 +9,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Ojus | Portfolio </title>
-        <link rel="icon" href="/blue.ico" />
+        <link rel="icon" href="/mishap.ico" />
       </Head>
       <NavBar />
       <div className={"bg-dark-100 px-4 dark:bg-black sm:px-8"}>
@@ -23,13 +23,13 @@ export default function Home() {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>ojus.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
             
             <p>
-              Hello world! I'm Ojus, a computer science undergrad {" "}
+              hello world! i'm ojus, a computer science undergrad {" "}
               <a
                 href="https://ptu.ac.in/"
                 target="_blank"
@@ -38,25 +38,25 @@ export default function Home() {
                   "rounded bg-blue-300 px-0.5 py-0.5 font-medium text-black hover:bg-blue-400 hover:text-black dark:bg-blue-900 dark:text-white dark:hover:bg-blue-400 dark:hover:text-white"
                 }
               >
-                @Punjab Technical University
+                @punjab technical university
               </a>
-              . I enjoy coding competitively and building useless but fun projects!{" "}
+              . i enjoy coding competitively and building fun projects!{" "}
             </p>
             <p>
-              Check out{" "}
+              check out{" "}
               <Link
                 href="/work"
                 className="rounded px-0.5 py-0.5 font-medium text-blue-400 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-900"
               >
                 ./work
               </Link>{" "}
-              or my GitHub (
+              or my github (
               <a
                 href="https://github.com/ojuss"
                 target="_blank"
                 rel="noreferrer"
                 className={
-                  "rounded px-0.5 py-0.5 font-medium text-green-400 hover:text-green-700 dark:text-green-300 dark:hover:text-green-900"
+                  "rounded px-0.5 py-0.5 font-medium text-green-400 hover:text-green-700 dark:text-purple-300 dark:hover:text-purple-900"
                 }
               >
                 @ojuss
@@ -77,9 +77,9 @@ export default function Home() {
           </div>
           <div className=" space-y-4 text-lg">
             <p>
-               I enjoy programming the most when it comes to <span className="text-react">React.js</span> && <span className="text-golang">Go</span> development, creating minimalist front-ends and strong back-ends. Always keen on imporving my skills!
+               i enjoy programming the most when it comes to <span className="text-react">react.js</span> && <span className="text-golang">go</span> development, creating minimalist front-ends and strong back-ends. always keen on imporving my skills!
             </p>
-            <p> I am actively looking for internship opportunities as a Web developer || Software engineer.<br /> Curious to know more about me or discuss opportunities? Let's connect on LinkedIn (
+            <p> i am actively looking for internship opportunities as a web developer or software engineer.<br /> curious to know more about me or discuss opportunities? let's connect on linkedin (
               <a
                 href="https://linkedin.com/in/ojuss"
                 target="_blank"
