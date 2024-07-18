@@ -29,13 +29,13 @@ const Projects = () => {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>experiences && projects.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Experiences && Projects.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
             
             <p>
-            in this section, you'll find a showcase of my latest projects and experience i've had. here is a summary of my work so far. 
+            In this section, you'll find a showcase of my latest projects and experience I've had. Here is a summary of my work so far. 
             </p>
           </section>
           <Exp />
@@ -52,7 +52,7 @@ const Projects = () => {
               <div className="pt-6 pb-2"><Project.Title>PDF-2-Scan</Project.Title></div>
               
               <Project.Description>
-                PDF-2-Scan is a development tool with user friendly interface that scans your .pdf to make it more clearer. advanced options involves filter adjustment with immediate feedbacks and results.
+                PDF-2-Scan is a development tool with user friendly interface that scans your .pdf to make it more clearer. Advanced options involves filter adjustment with immediate feedbacks and results.
               </Project.Description>
               <a
                 className="block w-max"

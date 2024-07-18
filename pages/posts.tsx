@@ -25,7 +25,7 @@ const Projects = () => {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>posting soon..</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Posting Soon..</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">

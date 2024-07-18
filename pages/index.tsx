@@ -23,13 +23,13 @@ export default function Home() {
               "mt-16 w-full self-start text-dark-900 dark:text-gray-50"
             }
           >
-            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>ojus.</h1>
+            <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus.</h1>
             
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
             
             <p>
-              hello world! i'm ojus, a computer science undergrad {" "}
+              Hello world! I'm Ojus, a computer science undergrad {" "}
               <a
                 href="https://ptu.ac.in/"
                 target="_blank"
@@ -38,12 +38,12 @@ export default function Home() {
                   "rounded bg-blue-300 px-0.5 py-0.5 font-medium text-black hover:bg-blue-400 hover:text-black dark:bg-blue-900 dark:text-white dark:hover:bg-blue-400 dark:hover:text-white"
                 }
               >
-                @punjab technical university
+                @Punjab Technical University
               </a>
-              . i enjoy coding competitively and building fun projects!{" "}
+              . I enjoy coding competitively and building cool things!{" "}
             </p>
             <p>
-              check out{" "}
+              Check out{" "}
               <Link
                 href="/work"
                 className="rounded px-0.5 py-0.5 font-medium text-blue-400 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-900"
@@ -77,9 +77,9 @@ export default function Home() {
           </div>
           <div className=" space-y-4 text-lg">
             <p>
-               i enjoy programming the most when it comes to <span className="text-react">react.js</span> && <span className="text-golang">go</span> development, creating minimalist front-ends and strong back-ends. always keen on imporving my skills!
+               I enjoy programming the most when it comes to <span className="text-react">React.js</span> && <span className="text-golang">Go</span> development, creating minimalist front-ends and strong back-ends. Always keen on imporving my skills!
             </p>
-            <p> i am actively looking for internship opportunities as a web developer or software engineer.<br /> curious to know more about me or discuss opportunities? let's connect on linkedin (
+            <p> I am actively looking for internship opportunities as a Web developer or Software engineer.<br /> Curious to know more about me or discuss opportunities? Let's connect on LinkedIn (
               <a
                 href="https://linkedin.com/in/ojuss"
                 target="_blank"
