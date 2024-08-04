@@ -6,16 +6,16 @@ import PageLayout from "@/components/PageLayout";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
 import devstar from "../projects/devestar.png"
+import esp32 from "../projects/esp32.png"
 
 
 const Projects = () => {
   const { colorMode } = useColorMode();
   const darkMode = colorMode === colorModes.dark;
   return (
-    <div className="">
+    <div>
       <Head>
         <title>Ojus | Work </title>
-        <link rel="icon" href="/mishap.ico" />
       </Head>
       
       <PageLayout >
@@ -54,34 +54,17 @@ const Projects = () => {
               <Project.Description>
                 PDF-2-Scan is a development tool with user friendly interface that scans your .pdf to make it more clearer. Advanced options involves filter adjustment with immediate feedbacks and results.
               </Project.Description>
-              <a
-                className="block w-max"
-                href=""
-                target="_blank"
-                rel="noreferrer"
-              >
-                
-                {/* <img
-                  src={`https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=325061&theme=${
-                    darkMode ? "dark" : "light"
-                  }`}
-                  alt="Octolink - Link sharing for GitHub repositories | Product Hunt"
-                  style={{ width: "250px", height: "54px" }}
-                  width="250"
-                  height="54"
-                /> */}
-              </a>
             </Project>
             <Project
-              url=""
-              github=""
+              url="https://wokwi.com"
+              github="ojuss"
               devpost=""
               className={
                 "dark:to-purple-100-900 bg-gradient-to-tr from-blue-100 to-purple-100 dark:from-blue-800 dark:to-purple-800"
               }
             >
-              <Project.Image src="" />
-              <Project.Title>SECOND PROJECT</Project.Title>
+              <Project.Image src={esp32} />
+              <div className="pt-6 pb-2"><Project.Title>Smart Garden Automation and Monitoring System</Project.Title></div>
               <Project.Description>
                 adding soon 
               </Project.Description>
