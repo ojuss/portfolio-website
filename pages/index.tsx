@@ -4,11 +4,12 @@ import Head from "next/head";
 import NavBar from "@/components/NavBar";
 import Image from 'next/image'
 
+
 export default function Home() {
   return (
     <div>
       <Head>
-        <title>Ojus | Portfolio </title>
+        <title>Ojus </title>
         <link rel="icon" href="/mishap.ico" />
       </Head>
       <NavBar />
@@ -24,10 +25,10 @@ export default function Home() {
             }
           >
             <h1 className={"text-4xl inline-block rounded text-green-500 dark:text-green-100 font-semibold"}>Ojus.</h1>
-            
+
           </section>
           <section className="mb-8 mt-6 space-y-4 text-lg">
-            
+
             <p>
               Hello world! I'm Ojus, a computer science undergrad {" "}
               <a
@@ -66,12 +67,13 @@ export default function Home() {
           </section>
           <div className=" pb-8 flex justify-center items-center w-full">
             <div className="w-64 h-64 overflow-hidden rounded-full">
-              <Image 
-                src="/pit.jpeg" 
-                alt="Pit" 
+              <Image
+                src="/pit.jpeg"
+                alt="Pit"
                 width={256}
                 height={256}
                 className="object-cover w-full h-full"
+                priority={true} // {false} | {true}
               />
             </div>
           </div>
@@ -98,5 +100,3 @@ export default function Home() {
     </div>
   );
 }
-
-

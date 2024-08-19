@@ -55,6 +55,7 @@ const Misc = () => {
               width={256}
               height={256}
               className="object-cover w-full h-full"
+              priority={true} // {false} | {true}
             />
           </div>
           <div className="w-64 h-64 overflow-hidden rounded-full">
@@ -64,6 +65,7 @@ const Misc = () => {
               width={256}
               height={256}
               className="object-cover w-full h-full"
+              priority={true} // {false} | {true}
             />
           </div>
         </div>
