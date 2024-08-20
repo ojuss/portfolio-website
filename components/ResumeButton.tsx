@@ -4,7 +4,7 @@ import { BsFillFileEarmarkPdfFill } from "react-icons/bs";
 const ResumeButton = () => {
   return (
     <a
-      href="https://google.com"
+      href="/ojus_cv.pdf"
       target="_blank"
       rel="noreferrer"
       className="group relative inline-block h-5 w-5 sm:h-6 sm:w-6"
