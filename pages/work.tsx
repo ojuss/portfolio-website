@@ -5,8 +5,8 @@ import GitHub from "@/components/GitHub";
 import PageLayout from "@/components/PageLayout";
 import useColorMode from "../hooks/useColorMode";
 import colorModes from "@/utils/colorModes";
-import devstar from "../projects/devestar.png"
-import esp32 from "../projects/esp32.png"
+import devstar from "../projects/devestar.png";
+import cdoor from "../projects/cdoor.png";
 
 
 const Projects = () => {
@@ -56,17 +56,17 @@ const Projects = () => {
               </Project.Description>
             </Project>
             <Project
-              url="https://wokwi.com"
-              github="ojuss"
+              url="https://collabdoor.github.io/dumbAF/"
+              github="collabdoor"
               devpost=""
               className={
                 "dark:to-purple-100-900 bg-gradient-to-tr from-blue-100 to-purple-100 dark:from-blue-800 dark:to-purple-800"
               }
             >
-              <Project.Image src={esp32} />
-              <div className="pt-6 pb-2"><Project.Title>Smart Garden Automation and Monitoring System</Project.Title></div>
+              <Project.Image src={cdoor} />
+              <div className="pt-6 pb-2"><Project.Title>Collabdoor / dumbAF</Project.Title></div>
               <Project.Description>
-                adding soon 
+                This community platform is designed to help students to collaborate and share their ideas. A course-work relevant studying resources site is already up to ace your exams.
               </Project.Description>
             </Project>
             <Project
