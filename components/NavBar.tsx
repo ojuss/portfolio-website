@@ -37,7 +37,7 @@ const NavBar = () => {
         </div>
         <div className={`hidden sm:flex items-center space-x-8 text-lg`}>
           <Link href={`/work`} className="text-sky-300 hover:text-indigo-300">./work</Link>
-          <Link href="/misc" className="text-sky-300 hover:text-indigo-300">./misc</Link>
+          {/* <Link href="/misc" className="text-sky-300 hover:text-indigo-300">./misc</Link> */}
         </div>
         <div className="hidden sm:flex items-center space-x-6 text-sky-300 ">
           <div className="hover:text-indigo-300">
